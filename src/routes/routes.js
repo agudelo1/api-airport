@@ -7,12 +7,9 @@ import { router as flightRouter } from "../flight/flight.route.js";
 
 export const router = Router();
 
-router.use("/passengers", passengerRouter);
-
-router.use("/city", cityRouter);
-
-router.use("/plane", planeRouter);
-
-router.use("/flight", flightRouter);
-
 router.use("/users", authRouter);
+
+router.use("/passengers", passengerRouter);
+router.use("/city", cityRouter);
+router.use("/plane", planeRouter);
+router.use("/flight", flightRouter);
